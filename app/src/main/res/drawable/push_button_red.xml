@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:state_pressed="false">
+
+        <!--没点击按钮的时候-->
+
+
+        <shape android:shape="rectangle">
+
+            <!--按钮形状-->
+
+
+            <corners android:radius="10dip"/>
+
+            <solid android:color="@color/colorAccent"/>
+
+            <!--按钮背景填充色-->
+
+
+        </shape>
+
+    </item>
+
+
+    -<item android:state_pressed="true">
+
+    <!--点击按钮的时候-->
+
+
+
+    -<shape android:shape="rectangle">
+
+    <!--按钮形状-->
+
+
+    <corners android:radius="10dip"/>
+
+    <solid android:color="@color/colorGray"/>
+
+    <!--按钮背景填充色-->
+
+
+</shape>
+
+</item>
+
+</selector>

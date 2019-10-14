@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            app:srcCompat="@drawable/login_logo" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="60dp" />
+
+        <!--学号-->
+        <LinearLayout
+            android:id="@+id/TextView"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="输入学号："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/password"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_studentid"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="14dp"
+                    android:hint="请输入学号"
+                    android:imeOptions="actionGo"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <!--输入密码-->
+        <LinearLayout
+            android:id="@+id/password1"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="登录密码："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <!-- 输入密码区域 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/password"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_password1"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="14dp"
+                    android:hint="请输入密码"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="14sp" />
+
+                <!-- 显示隐藏密码图标 -->
+                <ImageView
+                    android:id="@+id/img_eye1"
+                    android:layout_width="37dp"
+                    android:layout_height="19dp"
+                    android:clickable="true"
+                    android:contentDescription="控制密码明文密文显示"
+                    android:focusable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eyeclose" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <!--确认密码-->
+        <LinearLayout
+            android:id="@+id/password2"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="确认密码："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <!-- 输入密码区域 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/password"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_password2"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="14dp"
+                    android:hint="请输入密码"
+                    android:imeOptions="actionGo"
+                    android:inputType="textPassword"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="14sp" />
+
+                <!-- 显示隐藏密码图标 -->
+                <ImageView
+                    android:id="@+id/img_eye2"
+                    android:layout_width="37dp"
+                    android:layout_height="19dp"
+                    android:clickable="true"
+                    android:contentDescription="控制密码明文密文显示"
+                    android:focusable="true"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/eyeclose" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <!--输入邮箱-->
+        <LinearLayout
+            android:id="@+id/email"
+            android:layout_width="330dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="绑定邮箱："
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:addStatesFromChildren="true"
+                android:background="@drawable/password"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/register_email"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:drawablePadding="14dp"
+                    android:hint="请输入邮箱"
+                    android:imeOptions="actionGo"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textColorHint="#8c8c8c"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <!--按钮-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/register_button"
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/push_button"
+                android:text="注      册"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+            />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

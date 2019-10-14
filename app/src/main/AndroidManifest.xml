@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.e_learning">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".CurrentFragment3" />
+        <activity android:name=".RegisterDialog" />
+        <activity android:name=".CurrentFragment2" />
+        <activity android:name=".CurrentFragment1" />
+        <activity android:name=".CourseDialog" />
+        <activity android:name=".HouseActivity" />
+        <activity android:name=".ModifyDialog" />
+        <activity android:name=".IntroduceActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".ForgetActivity" />
+        <activity android:name=".ResourceActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
