@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IntroduceActivity">
+    tools:context=".WebIntroduceActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,23 +16,17 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="145dp"
-            app:srcCompat="@drawable/android_big" />
+            android:layout_height="174dp"
+            app:srcCompat="@drawable/web" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/textView6"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="移动应用开发"
-                android:textColor="@color/colorPrimary"
-                android:textSize="30sp"
-                android:textStyle="bold" />
-        </LinearLayout>
+            android:layout_height="wrap_content"
+            android:text="Web前端技术"
+            android:textColor="@color/colorPrimary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -52,16 +46,16 @@
                     android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:text="课程简介"
                     android:textColor="@color/colorBlack"
                     android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="课程简介" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="       《移动应用开发》课程是一门应用技术课程，着重介绍系统的体系结构、开发环境构建和安卓应用软件开发。结合案例的内容讲解，涵盖了安卓应用程序设计，界面设计、组件通信、网络应用等内容。\n        课程的任务是使学生了解安卓系统的组成、特点以及安卓系统的最新发展，熟悉一些A安卓系统应用，通过课程内实验培养学生掌握安卓应用程序开发的一般过程和常用方法。" />
+                    android:text="        1.HTML5语法结构和文本以及图像、链接和表格、列表以及表单和框架且熟练掌握各种HTML标签，能够完成页面的编写；\n        2.CSS3基础语法、各种选择器（通用选择器、元素选择器和class选择器、后代选择器、伪类选择器等）、框模型与背景、文本 格式化、表格、显示与定位和CSS复杂选择器（兄弟选择器和属性选择器以及伪类和伪元素选择器等），理解CSS Hack和CSS优化，能够手动完成各种页面样式的定义和编写，保证浏览器兼容性；\n        3.JS基础应用及实战项目：JavaScript基础语法常用界面特效和交互设计代码分析" />
 
                 <View
                     android:id="@+id/view3"
@@ -81,8 +75,8 @@
                 <ImageView
                     android:id="@+id/android_table"
                     android:layout_width="match_parent"
-                    android:layout_height="565dp"
-                    app:srcCompat="@drawable/android_table" />
+                    android:layout_height="279dp"
+                    app:srcCompat="@drawable/web_table" />
 
                 <View
                     android:id="@+id/view4"
@@ -125,7 +119,7 @@
                     android:id="@+id/textView5"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="2019年9月1日-2019年12月23日 \n每周一上午10：00~12：00（共16周）" />
+                    android:text="2019年9月1日-2019年12月29日 \n每周五上午10：00~12：00（共16周）" />
             </LinearLayout>
         </ScrollView>
 

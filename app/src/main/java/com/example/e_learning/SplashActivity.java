@@ -58,8 +58,8 @@ public class SplashActivity extends AppCompatActivity {
                 }
                 int relTime = (int) ((now - mMovieStart) % dur);
                 mMovie.setTime(relTime);
-                mMovie.draw(canvas, 200, 600);
-                if(time <= 144  ){
+                mMovie.draw(canvas, 210, 620);
+                if(time <= 144){
                     invalidate();
                 }
                 time = time + 1;

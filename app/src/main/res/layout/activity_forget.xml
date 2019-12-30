@@ -155,8 +155,6 @@
             android:layout_width="wrap_content"
             android:layout_height="25dp" />
 
-        <!--上传照片-->
-
         <Space
             android:layout_width="wrap_content"
             android:layout_height="25dp" />
@@ -169,8 +167,22 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/forget_return"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/push_button"
+                android:text="返      回"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="80dp"
+                android:layout_height="25dp" />
+
+            <Button
                 android:id="@+id/forget_confirm"
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:layout_height="30dp"
                 android:background="@drawable/push_button"
                 android:text="确      认"

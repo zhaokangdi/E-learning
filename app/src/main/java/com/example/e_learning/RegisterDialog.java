@@ -2,10 +2,8 @@ package com.example.e_learning;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.Window;
 import android.widget.Button;
 
 public class RegisterDialog extends Dialog implements android.view.View.OnClickListener {

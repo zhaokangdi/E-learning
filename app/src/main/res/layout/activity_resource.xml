@@ -133,7 +133,9 @@
                             android:layout_weight="1"
                             android:text="Android Studio安装"
                             android:textColor="@color/colorPrimary"
-                            android:textSize="18sp"/>
+                            android:textSize="18sp"
+                            android:clickable="true" />
+
                     </LinearLayout>
                 </LinearLayout>
 

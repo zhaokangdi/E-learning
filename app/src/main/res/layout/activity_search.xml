@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CurrentFragment2">
+    tools:context=".SearchActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
 
             <EditText
                 android:id="@+id/course_search"
-                android:layout_width="225dp"
+                android:layout_width="365dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@null"
@@ -60,7 +60,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:id="@+id/course1"
+                android:id="@+id/web_course"
                 android:layout_width="345dp"
                 android:layout_height="80dp"
                 android:clickable="true">
@@ -70,11 +70,11 @@
                     android:layout_height="5dp" />
 
                 <ImageView
-                    android:id="@+id/course1_view"
+                    android:id="@+id/web_course_view"
                     android:layout_width="120dp"
                     android:layout_height="match_parent"
                     android:padding="5dp"
-                    android:src="@drawable/android" />
+                    android:src="@drawable/web" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -83,11 +83,11 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/course_name1"
+                        android:id="@+id/course_web"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:clickable="true"
-                        android:text="移动应用开发"
+                        android:text="Web前端技术"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                         android:textColor="@color/colorBlack"
                         android:textStyle="bold" />
@@ -104,7 +104,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/my_course1_go"
+                        android:id="@+id/web_go"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="5dp"
@@ -113,7 +113,7 @@
             </LinearLayout>
 
             <View
-                android:id="@+id/view"
+                android:id="@+id/view2"
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:background="@color/colorGray" />
