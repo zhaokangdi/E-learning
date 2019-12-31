@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button register;
     private Button forget;
     private Button login;
-    private ImageView wechat;
+    private ImageView wechat1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         register = (Button) findViewById(R.id.login_register);
         forget = (Button) findViewById(R.id.login_forget);
         login  = (Button) findViewById(R.id.login_button);
-        wechat = (ImageView) findViewById(R.id.wechat);
+        wechat1 = (ImageView) findViewById(R.id.wechat);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        wechat.setOnClickListener(new View.OnClickListener() {
+        wechat1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(LoginActivity.this,WeChatActivity.class);
