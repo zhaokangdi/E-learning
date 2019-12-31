@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -19,6 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     private Button register;
     private Button forget;
     private Button login;
+    private ImageView wechat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +32,7 @@ public class LoginActivity extends AppCompatActivity {
         register = (Button) findViewById(R.id.login_register);
         forget = (Button) findViewById(R.id.login_forget);
         login  = (Button) findViewById(R.id.login_button);
+        wechat = (ImageView) findViewById(R.id.wechat);
 
         register.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,6 +68,15 @@ public class LoginActivity extends AppCompatActivity {
                 }else {
                     Toast.makeText(LoginActivity.this, "学号或密码输入错误！", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        wechat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(LoginActivity.this,WeChatActivity.class);
+                startActivity(i);
+                finish();
             }
         });
     }

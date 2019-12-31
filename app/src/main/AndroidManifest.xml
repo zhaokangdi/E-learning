@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".WebResourceActivity"></activity>
+        <activity android:name=".WeChatActivity"></activity>
+        <activity android:name=".WebResourceActivity" />
         <activity android:name=".WebIntroduceActivity" />
         <activity android:name=".SearchActivity" />
         <activity android:name=".VideoActivity" />
