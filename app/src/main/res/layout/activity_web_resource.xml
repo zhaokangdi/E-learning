@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ResourceActivity">
+    tools:context=".WebResourceActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,8 +16,8 @@
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/android" />
+            android:layout_height="164dp"
+            app:srcCompat="@drawable/web" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="移动应用开发"
+                android:text="Web前端技术"
                 android:textColor="@color/colorPrimary"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -96,7 +96,7 @@
                                         android:id="@+id/textView1"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="Android Studio使用方法"
+                                        android:text="Webstorm使用方法"
                                         android:textColor="@android:color/black"
                                         android:textSize="20sp" />
 
@@ -122,7 +122,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="200dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/android_studio_video" />
+                                    app:srcCompat="@drawable/web_video_1" />
                             </LinearLayout>
 
                             <Space
@@ -224,7 +224,7 @@
                                         android:id="@+id/textView2"
                                         android:layout_width="wrap_content"
                                         android:layout_height="wrap_content"
-                                        android:text="移动应用开发第一章"
+                                        android:text="Web前端技术第一章"
                                         android:textColor="@android:color/black"
                                         android:textSize="20sp" />
 
@@ -250,7 +250,7 @@
                                     android:layout_width="300dp"
                                     android:layout_height="200dp"
                                     android:layout_weight="1"
-                                    app:srcCompat="@drawable/android_video_2" />
+                                    app:srcCompat="@drawable/web_video_2" />
                             </LinearLayout>
 
                             <Space
@@ -307,5 +307,4 @@
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -132,9 +132,8 @@
         <Button
             android:id="@+id/introduce_register_course"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="注册课程"
-            android:background="@drawable/push_button_red"
+            android:layout_height="60dp"
+            android:text="已注册课程"
             android:textColor="@color/colorWhite"
             android:textSize="20sp" />
     </LinearLayout>
